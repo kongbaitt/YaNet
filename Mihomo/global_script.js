@@ -189,6 +189,11 @@ const rules = [
   'DOMAIN-SUFFIX,nblink.cc,直连',
   'DOMAIN-SUFFIX,ionewu.com,直连',
   'DOMAIN-SUFFIX,vicp.net,直连',
+  'DOMAIN-SUFFIX,wogg.net,直连',
+  'DOMAIN-SUFFIX,333232.xyz,直连',
+  'DOMAIN-SUFFIX,xxooo.cf,直连',
+  'DOMAIN-SUFFIX,888484.xyz,直连',
+  'DOMAIN-SUFFIX,xn--sss604efuw.com,直连',
 ]
 
 // 地区定义 (Icons 更新为 GitHub Raw)
