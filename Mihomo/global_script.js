@@ -597,21 +597,9 @@ function main(config) {
   config['bind-address'] = '*'
   config['mode'] = 'rule'
   config['ipv6'] = ipv6
-  // 保留宿主已有的控制器端口，避免覆盖 Box for Root 等环境的既有 WebUI 配置
-  if (!config['external-controller']) {
-    config['external-controller'] = '0.0.0.0:1906'
-  }
   config['mixed-port'] = 7890
   config['redir-port'] = 7891
   config['tproxy-port'] = 7892
-  // 保留宿主已有的面板目录与下载地址，缺失时再补默认值
-  if (!config['external-ui']) {
-    config['external-ui'] = './dashboard'
-  }
-  if (!config['external-ui-url']) {
-    config['external-ui-url'] =
-      `${githubProxy}https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip`
-  }
   config['dns'] = dnsConfig
   config['profile'] = {
     'store-selected': true,
